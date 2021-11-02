@@ -1,4 +1,4 @@
-package com.example.userService.entity;
+package com.example.userService.services.user.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

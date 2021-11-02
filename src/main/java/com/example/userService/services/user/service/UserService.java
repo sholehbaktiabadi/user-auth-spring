@@ -1,7 +1,7 @@
-package com.example.userService.service;
+package com.example.userService.services.user.service;
 
-import com.example.userService.entity.User;
-import com.example.userService.repository.UserRepository;
+import com.example.userService.services.user.entity.User;
+import com.example.userService.services.user.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
