@@ -1,6 +1,7 @@
 package com.example.userService.services.user.controller;
 
 import com.example.userService.config.MyUserDetailService;
+import com.example.userService.exception.ApiRequestException;
 import com.example.userService.model.AuthenticationRequest;
 import com.example.userService.model.AuthenticationResponse;
 import com.example.userService.services.user.entity.User;
@@ -44,6 +45,7 @@ public class UserController {
 
     @GetMapping("{id}")
     public User getOne(@PathVariable("id") int id){
-        return userService.getOneId(id);
+//        return userService.getOneId(id);
+        throw new ApiRequestException("error");
     }
 }

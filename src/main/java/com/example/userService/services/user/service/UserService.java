@@ -1,5 +1,6 @@
 package com.example.userService.services.user.service;
 
+import com.example.userService.exception.ApiRequestException;
 import com.example.userService.services.user.entity.User;
 import com.example.userService.services.user.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,8 +26,8 @@ public class UserService {
         return (ArrayList<User>) userRepository.findAll();
     }
 
-    public User getOneId(int id){
-        return userRepository.findById(id).orElse(null);
+    public User getOneId(int id) {
+            return userRepository.findById(id).orElse(null);
     }
 
     public User getOneName(String name){
